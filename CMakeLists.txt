@@ -30,26 +30,26 @@ set(MACOSX_BUNDLE_ICON_FILE "")
 set(MACOSX_BUNDLE_LONG_VERSION_STRING "1.0")
 set(MACOSX_BUNDLE_SHORT_VERSION_STRING "1.0")
 set(MACOSX_BUNDLE_BUNDLE_VERSION "1.0")
-set(MACOSX_BUNDLE_COPYRIGHT "Copyright YOU")
+set(MACOSX_BUNDLE_COPYRIGHT "Copyright ${DEVELOPMENT_NAME}")
 set(MACOSX_DEPLOYMENT_TARGET ${DEPLOYMENT_TARGET})
 
 set(APP_HEADER_FILES
-  ./AppDelegate.h
-  ./ViewController.h
-  ./CppInterface.h
-  ./Prefix.pch
+    ./AppDelegate.h
+    ./ViewController.h
+    ./CppInterface.h
+    ./Prefix.pch
 )
 
 set(APP_SOURCE_FILES
-  ./AppDelegate.m
-  ./ViewController.m
-  ./CppInterface.mm
-  ./main.m
+    ./AppDelegate.m
+    ./ViewController.m
+    ./CppInterface.mm
+    ./main.m
 )
 
 set(RESOURCES
-  ./Main.storyboard
-  ./LaunchScreen.storyboard
+    ./Main.storyboard
+    ./LaunchScreen.storyboard
 )
 
 add_executable(
@@ -69,19 +69,16 @@ add_executable(
   # ${PROJECT_SOURCE_DIR}/Torch.framework
 # )
 
-
 # Include the same headers for the statically linked framework:
 # Include headers to they're available as #import <Header/Header.h> from a framework
 # target_include_directories(${APP_NAME}
   # PUBLIC ${PROJECT_SOURCE_DIR}/Torch.framework/Headers
 # )
 
-
 # Static Link a library archive into the executable
 # target_link_libraries(${APP_NAME} 
 #   ${PROJECT_SOURCE_DIR}/framework/lib/libtorch.a
 # )
-
 
 # Include a source directory outside a framework
 # target_include_directories(${APP_NAME}
