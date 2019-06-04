@@ -4,3 +4,4 @@ build.ios
 build.sim
 build.sim64
 Xcode
+version.cmake
