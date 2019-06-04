@@ -1,0 +1,3 @@
+[submodule "cppframework"]
+	path = cppframework
+	url = https://github.com/Byte-666/opencv-ios-lib.git
